@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will It Rain?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Input Section -->
+        <div class="input-section" id="inputSection">
+            <input
+                type="text"
+                id="locationInput"
+                placeholder="Enter city name"
+                autocomplete="off"
+            >
+            <span class="divider">or</span>
+            <button id="geoButton">Use my location</button>
+        </div>
+
+        <!-- Answer Section -->
+        <div class="answer-section" id="answerSection">
+            <div class="answer" id="answer"></div>
+            <div class="location" id="locationDisplay"></div>
+            <button class="reset" id="resetButton">Check another location</button>
+        </div>
+
+        <!-- Loading State -->
+        <div class="loading" id="loading">
+            <div class="spinner"></div>
+        </div>
+
+        <!-- Error State -->
+        <div class="error" id="error">
+            <p id="errorMessage"></p>
+            <button id="retryButton">Try again</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
